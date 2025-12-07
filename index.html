@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiwut Life Planner - Your Timeline Mind Map</title>
+    <style>
+        :root {
+            --color-bg: #1e1e1e;
+            --color-panel-bg: #252526;
+            --color-text: #ffffff;
+            --color-primary: #00c3ff;
+            --color-secondary: #00F300;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--color-panel-bg);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        header h1 {
+            color: var(--color-primary);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: var(--color-text);
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: var(--color-panel-bg);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .features li {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid var(--color-primary);
+        }
+
+        .features strong {
+            color: var(--color-primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        code {
+            background-color: #3c3c3c;
+            color: var(--color-secondary);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #a0a0a0;
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: #a0a0a0;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script data-goatcounter="https://tiwut.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="https://tiwut.de/cookie.notice.js"></script>
+    <script src="https://tiwut.de/Script/enforce_https.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Tiwut Life Planner</h1>
+        <p>Map out your life's goals and progress with a visual Mind Map.</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>📝 About the Application</h2>
+            <p>The Tiwut Life Planner is a Python desktop application built using the **Tkinter** library. It provides a simple yet effective way to visualize your life goals, projects, and milestones as a dynamic, interactive Mind Map/Timeline.</p>
+            <p>Each "Node" represents a life point—a goal, project, or task—allowing you to track its progress, set deadlines, and add descriptions and external links.</p>
+        </section>
+
+        <section class="features">
+            <h2>✨ Key Features</h2>
+            <ul>
+                <li>
+                    <strong>Visual Goal Mapping:</strong> Organize your goals in a hierarchical tree structure, showing the relationship between major milestones and sub-tasks.
+                </li>
+                <li>
+                    <strong>Progress Tracking:</strong> Use the built-in slider to track the completion percentage of any goal (Node), visually represented by a progress bar.
+                </li>
+                <li>
+                    <strong>Detailed Node Editing:</strong> Easily edit the **Title**, **Date/Deadline**, **Progress**, **URL/Link**, and **Description** for any selected Node in the sidebar.
+                </li>
+                <li>
+                    <strong>Link Integration:</strong> Store relevant links (e.g., project folders, documentation) directly in the node and open them with a single click.
+                </li>
+                <li>
+                    <strong>Persistence:</strong> Save and load your entire life map using the custom <code>.tiwut_timeline</code> file format (JSON-based).
+                </li>
+                <li>
+                    <strong>Intuitive Navigation:</strong> Click nodes to select them and use the canvas drag feature to move around your map.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💻 Getting Started</h2>
+            <p>To run the application, you need **Python** installed on your system. Since the application uses the standard Python library <code>tkinter</code>, no external dependencies are needed.</p>
+            <p>1. Save the provided Python code as <code>tiwut_planner.py</code>.</p>
+            <p>2. Open your terminal or command prompt and run:</p>
+            <p><code>python tiwut_planner.py</code></p>
+            <p>The main window will open, starting with the root node "My Life".</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <a href="https://tiwut.de/cookie-banner-information.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.8rem;">Legal Notice</a>
+        <br>
+        © 2025 Tiwut
+    </footer>
+
+</body>
+</html>
